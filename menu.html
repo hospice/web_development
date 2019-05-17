@@ -1,0 +1,72 @@
+<!DOCTIPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>blur menu with css 3 transitions</title>
+        <style>
+            body{
+
+                font-family: tahoma;
+                overflow: hidden;
+                font-weight: bold;
+                background-image: url(images/dark-gray-painting-background-texture-450w-1073252678.jpg);
+                background-size: cover;
+            }
+
+            .bmenu{
+                padding: 0px;
+                margin: 0 0 10px 0;
+                position: relative;
+            }
+
+            .bmenu li{
+                font-size: 55px;
+                display:block;
+            }
+
+            .bmenu li a{
+                white-space: nowrap;
+                color: transparent;
+                display: block;
+                text-transform: uppercase;
+                text-align: center;
+                text-shadow: 0px 0px 5px white;
+                letter-spacing: 1px;
+                transform: scale(0.5);
+                transition: all 0.7s linear;
+            }
+
+            .bmenu li a:hover{
+                text-shadow: 0px 0px 1 white;
+                transform: scale(1);
+            }
+
+            .content{
+                margin-top: 55px;
+            }
+        
+        
+    
+        </style>
+
+    </head>
+    
+    <body>
+    </br></br>    
+        <div class="container">
+
+            <div class="content">
+                <ul class="bmenu">
+                    <li><a href="">WEB DESIGN</a></li>
+                    <li><a href="">WEB DEVELOPMENT</a></li>
+                    <li><a href="">FRONTEND/BACKEND</a></li>
+                    <li><a href="">RESPONSIVE</a></li>
+                    <li><a href="">CUSTOMER SUPPORT</a></li>
+                    <li><a href="">LOCATIONS</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>

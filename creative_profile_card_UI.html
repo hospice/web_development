@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>3d Hover effect on profile card using html and css 3 </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0
+            }
+            body{
+                font-size: 15px;
+                font-family: tahoma;
+                background-color: #333;
+                color: white;
+            }
+
+            img{
+                max-width: 100%;
+
+            }
+            .blog-post-section{
+                padding: 80px 0 20px;
+                overflow: hidden;
+
+            }
+
+            h2,h3{
+
+                font-family: tahoma;
+            }
+
+            .blog-entry{
+                margin-bottom: 200px;
+                position: relative;
+            }
+            .blog-entry .entry-hover{
+                position: absolute;
+                margin: 25px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+            .blog-entry .entry-hover .hover-cover{
+
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                bottom: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto -75px;
+                z-index: 2;
+                border-radius: 300px;
+                opacity: 0.7;
+                filter: alpha(opacity=50);
+            }
+            .blog-entry:hover .entry-hover .hover-cover{
+                height: auto;
+                width: auto;
+                border-radius: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .blog-entry:hover .entry-date{
+
+                top: auto;
+                bottom: 0;
+                margin-bottom: 20px;
+            }
+            
+            .blog-entry .entry-date{
+                position: absolute;
+                color:#fff;
+                text-align: center;
+                text-transform: uppercase;
+                left: 0;
+                right: 0;
+                top: 50%;
+                font-size: 17px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                z-index: 3;
+                margin: -12px auto 0;
+                display: inline;
+            }
+
+            .blog-entry .hover-info{
+                position: absolute;
+                top: 100%;
+                margin-top: -25px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 4;
+
+            }
+
+            .blog-entry:hover .hover-info{
+                top: 0;
+                margin-top: 25px;
+
+            }
+
+            .blog-entry .hover-info img{
+                border: 3px solid white;
+                border-radius: 200px;
+                width: 100px;
+                height: 100px;
+                margin: 0 auto 18px;
+            }
+
+            .blog-entry:hover .hover-info h2 a,
+            .blog-entry:hover .hover-info h2,
+            .blog-entry:hover .hover-info p{
+                color: #333 !important;
+            }
+
+            .blog-entry  .hover-info p{
+                font-size: 13px;
+                font-size: italic;
+
+            }
+
+            .blog-entry .hover-info h2 a{
+                color: #fff;
+                text-decoration: none;
+            }
+
+            
+
+            .blog-entry .hover-info .hover-text,
+            .blog-entry .hver-info  .hover-author{
+                display: none;
+                margin-bottom: 20px;    
+            }
+
+            .blog-entry:hover .hover-info .hover-text,
+            .blog-entry:hover .hover-info .hover-author{
+                display: block;
+
+            }
+
+            .designation.active, .real{
+                background: white !important;
+            }
+        
+        .blog-entry  .entry-hover  .hover-cover,
+        .blog-entry:hover .entry-hover .hover-cover,
+        .blog-entry .hover-info,
+        .blog-entry .entry-date{
+            transition: ease-in-out;
+        }
+
+        </style>
+    </head>
+    <body>
+        </br>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+
+        <div class="blog-post-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="blog-entry">
+                            <div class="entry-cover">
+                                <a href=""><img src="images/pexels-photo-1.jpeg" alt=""></a>
+                            </div>
+                            <div class="entry-hover">
+                                <div class="hover-cover real"></div>
+                                <h3 class="entry-date">MAY 20, 2019</h3>
+                                <div class="hover-info">
+                                    <img src="images/avatar1.png" alt="">
+                                    <p class="hover-author">By Peace Lover</p>
+                                    <h2><a href="">Peace is dear</a></h2>
+                                    <p class="designation">Peace / Life</p>
+                                    <p class="hover-text"></p>We support all nature of peace seekking with the fellow men without compromise!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="blog-entry">
+                            <div class="entry-cover">
+                                <a href=""><img src="images/pexels-photo-4.jpeg" alt=""></a>
+                            </div>
+                            <div class="entry-hover">
+                                <div class="hover-cover real"></div>
+                                <h3 class="entry-date">JUN 11, 2019</h3>
+                                <div class="hover-info">
+                                    <img src="images/avatar2.png" alt="">
+                                    <p class="hover-author">By Health Watcher</p>
+                                    <h2><a href="">Health is everything</a></h2>
+                                    <p class="designation">Mind / Health</p>
+                                    <p class="hover-text"></p>Take care of yourself and take care of others, each day is a gift!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+                        <div class="blog-entry">
+                            <div class="entry-cover">
+                                <a href=""><img src="images/pexels-photo-8.jpeg" alt=""></a>
+                            </div>
+                            <div class="entry-hover">
+                                <div class="hover-cover real"></div>
+                                <h3 class="entry-date">MAY 30, 2019</h3>
+                                <div class="hover-info">
+                                    <img src="images/avatar4.png" alt="">
+                                    <p class="hover-author">By Holly B.</p>
+                                    <h2><a href="">Keep yourself sound</a></h2>
+                                    <p class="designation">Soundness / Bliss</p>
+                                    <p class="hover-text"></p>You are what you make of your body, keep it spotless!
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                
+        </div>
+
+    </div>
+
+    </body>
+</html>
